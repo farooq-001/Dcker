@@ -12,21 +12,27 @@ Build Context: Dockerfile is used along with a build context (directory containi
 
 Example Dockerfile:
 =====================================================================================================================================
-# Use a base image
+1 Use a base image
 FROM ubuntu:latest
-# Set working directory
+
+2 Set working directory
 WORKDIR /app
-# Install dependencies
+
+3 Install dependencies
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
-# Copy application files
+    
+4 Copy application files
 COPY . /app
-# Expose port
+
+5 Expose port
 EXPOSE 8080
-# Define default command to run when container starts
+
+6 Define default command to run when container starts
 CMD ["python3", "app.py"]
+
 =====================================================================================================================================
 
 # Building an Image:
