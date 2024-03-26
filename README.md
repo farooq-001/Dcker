@@ -50,6 +50,10 @@ docker restart <container>: Restart a container.
 docker rm <container>: Remove a container.
 docker ps: List running containers.
 docker ps -a: List all containers (including stopped ones).
+
+# docker login
+docker login <username> <password>
+
 # Images
 docker pull <image>: Pull an image from a registry.
 docker images: List downloaded images.
