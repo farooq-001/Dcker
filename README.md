@@ -10,8 +10,7 @@ Commands: Use Dockerfile commands like FROM, RUN, COPY, ADD, CMD, ENTRYPOINT, EX
 Layered: Each instruction in the Dockerfile creates a layer in the image, allowing for efficient caching and reusability.
 Build Context: Dockerfile is used along with a build context (directory containing the Dockerfile and any other necessary files).
 
-Example Dockerfile:
-=====================================================================================================================================
+# Example Dockerfile:
 1 Use a base image
 FROM ubuntu:latest
 
@@ -32,8 +31,6 @@ EXPOSE 8080
 
 6 Define default command to run when container starts
 CMD ["python3", "app.py"]
-
-=====================================================================================================================================
 
 # Building an Image:
 Build Command: Use the docker build command to build an image from a Dockerfile.
